@@ -1,0 +1,3 @@
+# This file is used to add commit status on what new did I add from recent changes.
+
+- CL-103:Added a js function which generates a random number in range 0-3 and based on the number we add colour into the gamepattern array which is empty at first but fills as game progresses. The color is chosen from the color array where four colors are present currently and based on the randomnumber we take that as index in the color array and take that color and add it to the game pattern array.
