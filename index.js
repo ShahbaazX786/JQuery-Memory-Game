@@ -27,6 +27,7 @@ function checkAnswer(currentLevel){
     }
     else{
         console.log("wrong");
+        gameOver();
     }
 }
 
@@ -64,4 +65,15 @@ function anim(color){
     setTimeout(function(){
         $("#"+color).removeClass("pressed");
     },100);
+}
+
+
+function gameOver(){
+    playsound("wrong");
+    $("body").addClass("game-over");
+    setTimeout(() => {
+        $("body").removeClass("game-over");
+    }, 200);
+
+    $("h1").text("Game Over, Press any key to continue!");
 }
